@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Movie App</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="public/js/key.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-60">
+            <input type="search" id="search-movies" minlength="1" class="full-width control"
+                placeholder="Search Movies">
+        </div>
+        <div class="col-40">
+            <h3 class="show-list green" id="show-list">My list</h3>
+        </div>
+    </div>
+    <div class=" container flex" id="movie-grid">
+
+    </div>
+</body>
+<footer>
+    <script src="public/js/config.js"></script>
+    <script src="public/js/movies.js"></script>
+    <script src="public/js/list.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Apiconfig.init();
+        });
+    </script>
+</footer>
+
+</html>
